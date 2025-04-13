@@ -9,7 +9,6 @@ def log(message):
     with open(log_file_path, "a", encoding="utf-8") as log_file:
         log_file.write(message + "\n")
 
-# Путь к файлам (адаптация для Unity)
 current_path = os.path.abspath(__file__)
 while not current_path.endswith("Assets"):
     current_path = os.path.dirname(current_path)
@@ -18,10 +17,8 @@ unity_assets_path = os.path.join(current_path, "AIModels")
 model_path = os.path.join(unity_assets_path, "text_model.keras")
 dataset_path = os.path.join(current_path, "Dataset", "Dataset.json")
 
-# Логирование пути к датасету
 log(f"Dataset path: {dataset_path}")
 
-# Загрузка датасета
 if not os.path.exists(dataset_path):
     log(f"[ERROR] Dataset not found at: {dataset_path}")
     raise FileNotFoundError(f"Dataset not found at: {dataset_path}")
@@ -29,28 +26,23 @@ if not os.path.exists(dataset_path):
 with open(dataset_path, "r", encoding="utf-8") as file:
     data = json.load(file)
 
-# Логирование данных из датасета
-log(f"[INFO] Dataset loaded. Sample data: {data[:2]}")  # Печатаем только первые 2 записи для логирования
+log(f"[INFO] Dataset loaded. Sample data: {data[:2]}") 
 
-# Подготовка входных данных
 X = np.array(
     [[d["SentimentScore"], d["ManipulativeWordRatio"], d["LexicalDiversity"], d["SubjectivityScore"]] for d in data])
 y_labels = [d["Label"] for d in data]
 y_conclusions = [d["Conclusion"] for d in data]
 
-# Нормализация данных
-log(f"[INFO] Normalizing data...")  # Логирование начала нормализации
+log(f"[INFO] Normalizing data...")  
 scaler = MinMaxScaler()
 X = scaler.fit_transform(X)
 
-# Кодирование меток
 label_encoder = LabelEncoder()
-y_labels_encoded = label_encoder.fit_transform(y_labels)  # Теперь целые числа
+y_labels_encoded = label_encoder.fit_transform(y_labels)  
 
 conclusion_encoder = LabelEncoder()
-y_conclusions_encoded = conclusion_encoder.fit_transform(y_conclusions)  # Теперь целые числа
+y_conclusions_encoded = conclusion_encoder.fit_transform(y_conclusions)  
 
-# Создание или загрузка модели
 if os.path.exists(model_path):
     model = tf.keras.models.load_model(model_path)
     log(f"Model loaded from: {model_path}")
@@ -94,19 +86,16 @@ def predict_text(json_file_path):
             log(f"📄 File content:\n{content}")
             data = json.loads(content)
 
-        # Логирование содержимого данных перед передачей в модель
         log(f"[INFO] Input data to model: {data}")
 
         input_data = np.array([[data[key] for key in
                                 ["SentimentScore", "ManipulativeWordRatio", "LexicalDiversity", "SubjectivityScore"]]])
         input_data = scaler.transform(input_data)
 
-        # Логирование формы данных перед подачей в модель
         log(f"[INFO] Normalized input data: {input_data}")
 
         pred_label, pred_conclusion = model.predict(input_data)
 
-        # Логирование предсказанных значений
         log(f"[INFO] Model raw prediction: Label={pred_label}, Conclusion={pred_conclusion}")
 
         label_index = np.argmax(pred_label)
