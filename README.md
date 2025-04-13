@@ -10,7 +10,7 @@ Built with **Unity (C#)** for the interface and **Python** for AI processing, th
 
 ## 📌 Table of Contents
 
-- [Project Description](#project-description)
+- [Project Description](#project-description-📖)
 - [Core Features](#core-features)
 - [System Architecture](#system-architecture)
 - [How It Works](#how-it-works)
