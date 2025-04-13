@@ -10,17 +10,17 @@ Built with **Unity (C#)** for the interface and **Python** for AI processing, th
 
 ## 📌 Table of Contents
 
-- [Project Description](#📖-project-description)
-- [Core Features](#✨-core-features)
-- [System Architecture](#🧱-system-architecture)
-- [How It Works](#🛠️-how-it-works)
-- [Algorithms](#📐-algorithms)
-- [Neural Network](#🧠-neural-network-model)
-- [Screenshots](#🖼️-screenshots)
-- [Technologies Used](#🧪-technologies-used)
-- [Author](#👩‍💻-author)
-- [Disclaimer](#⚠️-disclaimer)
-- [License](#📄-license)
+- [Project Description](#project-description)
+- [Core Features](#core-features)
+- [System Architecture](#system-architecture)
+- [How It Works](#how-it-works)
+- [Algorithms](#algorithms)
+- [Neural Network](#neural-network-model)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Author](#author)
+- [Disclaimer](#disclaimer)
+- [License](#license)
 
 ---
 
