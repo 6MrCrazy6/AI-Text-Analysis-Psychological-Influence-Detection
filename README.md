@@ -24,7 +24,7 @@ Built with **Unity (C#)** for the interface and **Python** for AI processing, th
 
 ---
 
-## 📖 Project Description
+## Project Description
 
 This tool was developed as part of a diploma thesis focused on **AI and Information-Psychological Operations (IPO)**.  
 Its purpose is to detect elements of influence in digital text using:
