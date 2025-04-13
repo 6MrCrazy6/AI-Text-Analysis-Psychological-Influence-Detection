@@ -10,17 +10,17 @@ Built with **Unity (C#)** for the interface and **Python** for AI processing, th
 
 ## 📌 Table of Contents
 
-- [Project Description](#project-description)
-- [Core Features](#core-features)
-- [System Architecture](#system-architecture)
-- [How It Works](#how-it-works)
-- [Algorithms](#algorithms)
-- [Neural Network](#neural-network)
-- [Screenshots](#screenshots)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [License](#license)
-- [Author](#author)
+- [Project Description](#📖-project-description)
+- [Core Features](#✨-core-features)
+- [System Architecture](#🧱-system-architecture)
+- [How It Works](#🛠️-how-it-works)
+- [Algorithms](#📐-algorithms)
+- [Neural Network](#🧠-neural-network-model)
+- [Screenshots](#🖼️-screenshots)
+- [Technologies Used](#🧪-technologies-used)
+- [Author](#👩‍💻-author)
+- [Disclaimer](#⚠️-disclaimer)
+- [License](#📄-license)
 
 ---
 
@@ -196,6 +196,7 @@ The neural network receives the following **four features** as input:
 **Inna Varchenko**  
 Bachelor's Degree Student at **Central Ukrainian National Technical University]**  
 📫 Contact: devilyumeko42@gmail.com
+
 ---
 
 ## ⚠️ Disclaimer
