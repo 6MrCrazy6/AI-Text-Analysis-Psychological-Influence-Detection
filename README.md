@@ -20,7 +20,7 @@ Built with **Unity (C#)** for the interface and **Python** for AI processing, th
 - [Screenshots](#screenshots)
 - [Technologies Used](#-technologies-used)
 - [Author](#-author)
-- [Disclaimer](#-disclaimer)
+- [Disclaimer](#disclaimer)
 - [License](#-license)
 
 ---
@@ -225,7 +225,7 @@ Bachelor's Degree Student at **Central Ukrainian National Technical University**
 
 ---
 
-## ⚠️ Disclaimer
+<h2 id="disclaimer">⚠️ Disclaimer</h2>
 
 This project was developed for educational and research purposes only.  
 The software is a prototype and should not be used in critical or commercial systems without further validation.
