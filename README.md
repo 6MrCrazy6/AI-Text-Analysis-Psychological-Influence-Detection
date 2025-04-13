@@ -1,13 +1,10 @@
 <p align="left">
   <img src="Img/Logo.png" alt="Logo" width="250"/>
 </p>
-
-
 # AI Text Analysis: Psychological Influence Detection
 
 A research-based software designed to **detect psychological and emotional manipulation** in texts using a combination of classic algorithms and neural networks.  
 Built with **Unity (C#)** for the interface and **Python** for AI processing, this system analyzes user input and provides a detailed breakdown of potential influence techniques.
-
 
 ---
 
