@@ -129,20 +129,14 @@ Results returned to Unity UI
 ## 🧪 Technologies Used
 
 - **Unity** (C#)
-- **Python 3.9**
+- **Python 3.11**
 - **PythonNet** (C#↔Python bridge)
-- **NLTK**, **TextBlob**, **Sklearn**
+- **NLTK**, **TextBlob**, **Sklearn**, **VADER**
 - **Custom Neural Network** (Keras/PyTorch)
 - Markdown for documentation
 
 ---
 
-
-## 📄 License
-
-This project is licensed under the [**Creative Commons Attribution-ShareAlike 4.0 International License**](https://creativecommons.org/licenses/by-sa/4.0/) — see the [LICENSE](LICENSE.md) file for details.
-
----
 
 ## 👩‍💻 Author
 
@@ -158,6 +152,8 @@ This project was developed for educational and research purposes only.
 The software is a prototype and should not be used in critical or commercial systems without further validation.
 
 
-## License
+## 📄 License
 
-This project is licensed under the [**Creative Commons Attribution-ShareAlike 4.0 International License**](https://creativecommons.org/licenses/by-sa/4.0/) - see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the [**Creative Commons Attribution-ShareAlike 4.0 International License**](https://creativecommons.org/licenses/by-sa/4.0/) — see the [LICENSE](LICENSE.md) file for details.
+
+---
