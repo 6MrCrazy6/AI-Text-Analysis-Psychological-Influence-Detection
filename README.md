@@ -1,4 +1,4 @@
-![Logo](path/to/your/logo.png) 
+![Logo](Img/Logo.png) 
 
 # AI Text Analysis: Psychological Influence Detection
 
@@ -49,8 +49,9 @@ Its purpose is to detect elements of influence in digital text using:
 
 ```
 Unity (Frontend)
+   ↓ C# Algorithms
    ↓ PythonNet Bridge
-Python Scripts (Analysis + Neural Network)
+Python Scripts (Neural Network)
    ↓
 Results returned to Unity UI
 ```
@@ -142,17 +143,14 @@ Where:
 
 The neural network receives the following **four features** as input:
 
-1. Overall sentiment score `S`
-2. Manipulative frequency $`M_f`$
-3. Subjectivity index $`S_r`$
-4. Lexical diversity `TTR`
+1. Overall sentiment score: `S`
+2. Manipulative frequency: $`M_f`$
+3. Subjectivity index: $`S_r`$
+4. Lexical diversity: `TTR`
 
 ### 🔧 Architecture
 
-<!-- INSERT neural_network_structure.png -->
-![Neural Network Architecture](path/to/neural_network_structure.png)
-
-> *Replace the above path with your actual image showing the neural network structure*
+![Neural Network Architecture](Img/NeuralNetworkStructure.png)
 
 #### Layer Details:
 - **Input Layer**: 4 neurons (1 per feature)  
@@ -195,10 +193,9 @@ The neural network receives the following **four features** as input:
 
 ## 👩‍💻 Author
 
-**[Your Full Name]**  
-Bachelor's Degree Student at **[Your University]**  
-📫 Contact: [youremail@example.com]
-
+**Inna Varchenko**  
+Bachelor's Degree Student at **Central Ukrainian National Technical University]**  
+📫 Contact: devilyumeko42@gmail.com
 ---
 
 ## ⚠️ Disclaimer
