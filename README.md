@@ -24,7 +24,7 @@ Built with **Unity (C#)** for the interface and **Python** for AI processing, th
 - [Author](#-author)
 - [Disclaimer](#-disclaimer)
 - [License](#-license)
-- 
+
 ---
 
 ## 📖 Project Description 
