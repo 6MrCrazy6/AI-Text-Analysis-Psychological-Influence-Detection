@@ -2,12 +2,10 @@
   <img src="Img/Logo.png" alt="Logo" width="250"/>
 </p>
 
-
 # AI Text Analysis: Psychological Influence Detection
 
 A research-based software designed to **detect psychological and emotional manipulation** in texts using a combination of classic algorithms and neural networks.  
 Built with **Unity (C#)** for the interface and **Python** for AI processing, this system analyzes user input and provides a detailed breakdown of potential influence techniques.
-
 
 ---
 
@@ -16,13 +14,13 @@ Built with **Unity (C#)** for the interface and **Python** for AI processing, th
 - [Project Description](#-project-description)
 - [Core Features](#-core-features)
 - [System Architecture](#-system-architecture)
-- [How It Works](#-how-it-works)
+- [How It Works](#how-it-works)
 - [Algorithms](#-algorithms)
 - [Neural Network Model](#-neural-network-model)
-- [Screenshots](#-screenshots)
+- [Screenshots](#screenshots)
 - [Technologies Used](#-technologies-used)
 - [Author](#-author)
-- [Disclaimer](#-disclaimer)
+- [Disclaimer](#disclaimer)
 - [License](#-license)
 
 ---
@@ -61,7 +59,7 @@ Results returned to Unity UI
 
 ---
 
-## 🛠️ How It Works
+<h2 id="how-it-works">🛠️ How It Works</h2>
 
 1. User inputs a block of text in the Unity interface.
 2. The text is passed to Python through PythonNet.
@@ -171,7 +169,7 @@ The neural network receives the following **four features** as input:
 
 ---
 
-## 🖼️ Screenshots
+<h2 id="screenshots">🖼️ Screenshots</h2>
 
 ### 🏠 Main Menu  
 ![Main Menu](Img/MainMenu.png)  
@@ -222,12 +220,12 @@ The neural network evaluated the content as **neutral** and generated the follow
 ## 👩‍💻 Author
 
 **Inna Varchenko**  
-Bachelor's Degree Student at **Central Ukrainian National Technical University]**  
+Bachelor's Degree Student at **Central Ukrainian National Technical University**  
 📫 Contact: devilyumeko42@gmail.com
 
 ---
 
-## ⚠️ Disclaimer
+<h2 id="disclaimer">⚠️ Disclaimer</h2>
 
 This project was developed for educational and research purposes only.  
 The software is a prototype and should not be used in critical or commercial systems without further validation.
