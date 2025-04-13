@@ -206,6 +206,8 @@ Bachelor's Degree Student at **[Your University]**
 This project was developed for educational and research purposes only.  
 The software is a prototype and should not be used in critical or commercial systems without further validation.
 
+---
+
 
 ## 📄 License
 
