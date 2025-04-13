@@ -72,3 +72,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Ignore Python bytecode and caches inside site-packages
+Assets/StreamingAssets/Python/Lib/site-packages/**/__pycache__/
+/Assets/StreamingAssets/Python/Lib/site-packages/**/*.pyc
+Assets/StreamingAssets/Python/Lib/site-packages/**/*.pyo
+Assets/StreamingAssets/Python/Lib/site-packages/**/*.egg-info/
