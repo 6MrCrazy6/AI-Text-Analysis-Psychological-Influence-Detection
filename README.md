@@ -173,14 +173,37 @@ The neural network receives the following **four features** as input:
 
 ## 🖼️ Screenshots
 
-### 🔍 Input Interface
-![Input](screenshots/input_ui.png)
+### 🏠 Main Menu  
+![Main Menu](Img/MainMenu.png)  
 
-### 📊 Output Analysis
-![Output](screenshots/output_results.png)
+The main screen of the application consists of the following components:
 
-### 🔁 Full Workflow
-![Flow](screenshots/full_flow.png)
+- **Application Title**
+- **Start Analysis** button
+- **About the App** button
+- **Exit** button
+
+---
+
+### 🔍 Input Interface  
+![Input](Img/InputText.png)  
+
+After clicking the **Start Analysis** button, the main window opens with these blocks:
+
+- **Text Input Field** – for entering or pasting content  
+- **Word Counter** – tracks the number of words  
+- **Analyze** button – starts the text analysis  
+- **Clear** button – clears the text field  
+
+---
+
+### 📊 Output Analysis  
+![Output](Img/Results.png) 
+
+The screenshot shows the output after analyzing a text fragment from the movie *"Angels & Demons"*.  
+The neural network evaluated the content as **neutral** and generated the following conclusion:
+
+> *"The text avoids extreme opinions or manipulative elements and provides straightforward information."*
 
 ---
 
