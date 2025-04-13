@@ -16,4 +16,5 @@
 *.json text eol=lf
 *.pyi text eol=lf 
 *.svg text eol=lf
-*.pyi text eol=lf  
+*.pyi text eol=lf 
+Assets/StreamingAssets/Python/Lib/site-packages/** text eol=lf
