@@ -1,3 +1,5 @@
+![Logo](path/to/your/logo.png) 
+
 # AI Text Analysis: Psychological Influence Detection
 
 A research-based software designed to **detect psychological and emotional manipulation** in texts using a combination of classic algorithms and neural networks.  
@@ -60,8 +62,8 @@ Results returned to Unity UI
 1. User inputs a block of text in the Unity interface.
 2. The text is passed to Python through PythonNet.
 3. Multiple algorithms analyze different characteristics:
-   - Emotional tone
-   - Lexical variation
+   - Sentiment Analysis
+   - Lexical Diversity (TTR)
    - Subjectivity & manipulation
 4. Neural network performs classification based on computed features.
 5. Final results are displayed in Unity.
@@ -70,46 +72,99 @@ Results returned to Unity UI
 
 ## 📐 Algorithms
 
-### 🟡 1. Sentiment Analysis  
-**Goal:** Detect emotional tone (positive, negative, neutral)  
-**Tools Used:** TextBlob or custom polarity scoring  
-**How it works:**  
-- Each word is evaluated for polarity.
-- A total score is computed.
-- Based on thresholds, a tone is assigned.
+### 🗣️ Sentiment Analysis
+
+The system uses two established Python libraries:
+
+- **VADER** – A lexicon and rule-based sentiment analysis tool tuned for social media text.
+- **TextBlob** – A simple library for processing textual data, providing sentiment polarity.
+
+To compute a unified sentiment score:
+
+$S = \frac{V + T}{2}$
+
+Where:
+- `V` = sentiment score from **VADER**
+- `T` = sentiment score from **TextBlob**
 
 ---
 
-### 🔴 2. Manipulative Word Frequency  
-**Goal:** Find manipulative or emotionally charged words  
-**How it works:**  
-- Compare words to a database of manipulative terms (e.g., *truth*, *betrayal*, *freedom*, *hidden*).
-- Count how many such terms are found.
-- Compute a "manipulation level" score.
+### 🧠 Subjectivity Index
+
+This score measures how opinionated the text is. The formula used:
+
+$S_r = \frac{S_u}{T}$
+
+Where:
+- $`S_u`$ = number of subjective sentences
+- `T` = total number of sentences
 
 ---
 
-### 🔵 3. Subjectivity & Lexical Diversity  
-**Goal:** Determine if the text is objective or opinionated  
-**How it works:**  
-- Uses subjectivity scoring (e.g., TextBlob or rule-based).
-- Measures type-token ratio (TTR) for lexical diversity.
-- Flags extremely subjective, repetitive language.
+### 📚 Lexical Diversity (TTR)
+
+The **Type-Token Ratio (TTR)** is used to evaluate the vocabulary variety:
+
+$TTR = \frac{U}{T}$
+
+Where:
+- `U` = number of unique words
+- `T` = total number of words
 
 ---
 
-## 🤖 Neural Network
+### ⚠️ Manipulative Language Detection
 
-- Developed in Python (Keras or PyTorch)
-- Trained on a custom dataset of emotionally and manipulative texts
-- Input features:
-  - Sentiment score
-  - Manipulative word frequency
-  - Subjectivity level
-  - Lexical diversity score
-- Output: Binary classification
-  - **Psychologically Influenced**
-  - **Not Influenced**
+The system uses a custom-crafted JSON database containing over **2,000 labeled manipulative phrases**, grouped into categories:
+
+- Generalization  
+- Call to action  
+- Emotional triggers  
+- Fear-based messages  
+- Manipulative contrasts  
+- False analogies  
+- Concept substitution  
+- Appeal to patriotism  
+- Doubt and uncertainty  
+- Urgency and alarmism  
+
+For each detected word/phrase:
+
+$M_f = \frac{M}{T}$
+
+Where:
+- `M` = number of manipulative words found in the text
+- `T` = total number of words
+
+---
+
+## 🧠 Neural Network Model
+
+The neural network receives the following **four features** as input:
+
+1. Overall sentiment score `S`
+2. Manipulative frequency $`M_f`$
+3. Subjectivity index $`S_r`$
+4. Lexical diversity `TTR`
+
+### 🔧 Architecture
+
+<!-- INSERT neural_network_structure.png -->
+![Neural Network Architecture](path/to/neural_network_structure.png)
+
+> *Replace the above path with your actual image showing the neural network structure*
+
+#### Layer Details:
+- **Input Layer**: 4 neurons (1 per feature)  
+- **Hidden Layer**: 8 neurons, `ReLU` activation  
+- **Output Layer**: 2 neurons, `Softmax` activation  
+    - Label: classification (e.g. Propaganda / Neutral)  
+    - Conclusion: summary of the result
+
+#### Training:
+- **Optimizer**: Adam  
+- **Loss Function**: `sparse_categorical_crossentropy`  
+- **Training Data**: Labeled dataset with annotated propaganda indicators
 
 ---
 
@@ -132,7 +187,7 @@ Results returned to Unity UI
 - **Python 3.11**
 - **PythonNet** (C#↔Python bridge)
 - **NLTK**, **TextBlob**, **Sklearn**, **VADER**
-- **Custom Neural Network** (Keras/PyTorch)
+- **Custom Neural Network** (Keras/Tensorflow)
 - Markdown for documentation
 
 ---
