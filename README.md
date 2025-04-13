@@ -1,4 +1,4 @@
-# AI-Text-Analysis-Psychological-Influence-Detection
+# AI Text Analysis: Psychological Influence Detection
 
 
 
