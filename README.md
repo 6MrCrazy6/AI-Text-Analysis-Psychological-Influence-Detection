@@ -220,7 +220,7 @@ The neural network evaluated the content as **neutral** and generated the follow
 ## 👩‍💻 Author
 
 **Inna Varchenko**  
-Bachelor's Degree Student at **Central Ukrainian National Technical University]**  
+Bachelor's Degree Student at **Central Ukrainian National Technical University**  
 📫 Contact: devilyumeko42@gmail.com
 
 ---
