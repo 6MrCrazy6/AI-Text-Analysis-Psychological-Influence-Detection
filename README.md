@@ -14,10 +14,10 @@ Built with **Unity (C#)** for the interface and **Python** for AI processing, th
 - [Project Description](#-project-description)
 - [Core Features](#-core-features)
 - [System Architecture](#-system-architecture)
-- [How It Works](#-how-it-works)
+- [How It Works](#how-it-works)
 - [Algorithms](#-algorithms)
 - [Neural Network Model](#-neural-network-model)
-- [Screenshots](#-screenshots)
+- [Screenshots](#screenshots)
 - [Technologies Used](#-technologies-used)
 - [Author](#-author)
 - [Disclaimer](#-disclaimer)
@@ -59,7 +59,7 @@ Results returned to Unity UI
 
 ---
 
-## 🛠️ How It Works
+<h2 id="how-it-works">🛠️ How It Works</h2>
 
 1. User inputs a block of text in the Unity interface.
 2. The text is passed to Python through PythonNet.
@@ -169,7 +169,7 @@ The neural network receives the following **four features** as input:
 
 ---
 
-## 🖼️ Screenshots
+<h2 id="screenshots">🖼️ Screenshots</h2>
 
 ### 🏠 Main Menu  
 ![Main Menu](Img/MainMenu.png)  
