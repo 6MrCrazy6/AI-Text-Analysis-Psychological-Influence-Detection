@@ -1,4 +1,7 @@
-![Logo](Img/Logo.png) 
+<p align="center">
+  <img src="Img/Logo.png" alt="Logo" width="250"/>
+</p>
+
 
 # AI Text Analysis: Psychological Influence Detection
 
