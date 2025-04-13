@@ -1,4 +1,4 @@
-<p align="center">
+<p align="left">
   <img src="Img/Logo.png" alt="Logo" width="250"/>
 </p>
 
@@ -13,19 +13,18 @@ Built with **Unity (C#)** for the interface and **Python** for AI processing, th
 
 ## 📌 Table of Contents
 
-- [📖 Project Description](#-project-description)
-- [✨ Core Features](#-core-features)
-- [🧱 System Architecture](#-system-architecture)
-- [🛠️ How It Works](#-how-it-works)
-- [📐 Algorithms](#-algorithms)
-- [🧠 Neural Network Model](#-neural-network-model)
-- [🖼️ Screenshots](#-screenshots)
-- [🧪 Technologies Used](#-technologies-used)
-- [👩‍💻 Author](#-author)
-- [⚠️ Disclaimer](#-disclaimer)
-- [📄 License](#-license)
-
-
+- [Project Description](#-project-description)
+- [Core Features](#-core-features)
+- [System Architecture](#-system-architecture)
+- [How It Works](#-how-it-works)
+- [Algorithms](#-algorithms)
+- [Neural Network Model](#-neural-network-model)
+- [Screenshots](#-screenshots)
+- [Technologies Used](#-technologies-used)
+- [Author](#-author)
+- [Disclaimer](#-disclaimer)
+- [License](#-license)
+- 
 ---
 
 ## 📖 Project Description 
@@ -86,7 +85,7 @@ The system uses two established Python libraries:
 
 To compute a unified sentiment score:
 
-$S = \frac{V + T}{2}$
+<h3 align="center">$S = \frac{V + T}{2}$</h3>
 
 Where:
 - `V` = sentiment score from **VADER**
@@ -98,7 +97,7 @@ Where:
 
 This score measures how opinionated the text is. The formula used:
 
-$S_r = \frac{S_u}{T}$
+<h3 align="center">$S_r = \frac{S_u}{T}$</h3>
 
 Where:
 - $`S_u`$ = number of subjective sentences
@@ -110,7 +109,7 @@ Where:
 
 The **Type-Token Ratio (TTR)** is used to evaluate the vocabulary variety:
 
-$TTR = \frac{U}{T}$
+<h3 align="center">$TTR = \frac{U}{T}$</h3>
 
 Where:
 - `U` = number of unique words
@@ -135,7 +134,7 @@ The system uses a custom-crafted JSON database containing over **2,000 labeled m
 
 For each detected word/phrase:
 
-$M_f = \frac{M}{T}$
+<h3 align="center">$M_f = \frac{M}{T}$</h3>
 
 Where:
 - `M` = number of manipulative words found in the text
@@ -154,7 +153,9 @@ The neural network receives the following **four features** as input:
 
 ### 🔧 Architecture
 
-![Neural Network Architecture](Img/NeuralNetworkStructure.png)
+<p align="center">
+  <img src="Img/NeuralNetworkStructure.png" alt="Neural Network Architecture" width="600"/>
+</p>
 
 #### Layer Details:
 - **Input Layer**: 4 neurons (1 per feature)  
